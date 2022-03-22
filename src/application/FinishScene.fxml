@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="application.FinishSceneController">
+   <children>
+      <Label alignment="CENTER" layoutX="2.0" layoutY="30.0" prefHeight="59.0" prefWidth="1080.0" text="Congratulations" underline="true">
+         <font>
+            <Font size="78.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="251.0" layoutY="135.0" prefHeight="32.0" prefWidth="591.0" text="You have finished the quiz">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Label>
+      <Label fx:id="scoreBox" layoutX="334.0" layoutY="366.0" prefHeight="59.0" prefWidth="425.0" text="Final Score: [Score]">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="345.0" layoutY="450.0" prefHeight="36.0" prefWidth="404.0" text="Would you like to try again?">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Button fx:id="startQuiz" layoutX="162.0" layoutY="529.0" mnemonicParsing="false" onAction="#YesButton" prefHeight="63.0" prefWidth="255.0" style="-fx-cursor: hand;" text="Yes">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Button>
+      <Button fx:id="returnToMenu" layoutX="638.0" layoutY="529.0" mnemonicParsing="false" onAction="#NoButton" prefHeight="63.0" prefWidth="255.0" style="-fx-cursor: hand;" text="No">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="firstStar" fitHeight="160.0" fitWidth="160.0" layoutX="328.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/star-empty.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="secondStar" fitHeight="160.0" fitWidth="160.0" layoutX="467.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/star-empty.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="thirdStar" fitHeight="160.0" fitWidth="160.0" layoutX="605.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/star-empty.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

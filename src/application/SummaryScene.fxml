@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1080.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="application.SummarySceneController">
+   <children>
+      <TableView fx:id="tableView" layoutX="31.0" layoutY="104.0" prefHeight="463.0" prefWidth="1016.0" stylesheets="@TableViewStyle.css">
+        <columns>
+          <TableColumn fx:id="wordColumn" prefWidth="677" text="Tested Words" />
+          <TableColumn fx:id="correctColumn" prefWidth="338" text="Correct or Incorrect" />
+        </columns>
+      </TableView>
+      <Label fx:id="summaryLabel" alignment="CENTER" layoutX="4.0" layoutY="11.0" prefHeight="47.0" prefWidth="1074.0" stylesheets="@application.css" text="Summary">
+         <font>
+            <Font size="67.0" />
+         </font></Label>
+      <Button fx:id="continueButton" layoutX="461.0" layoutY="615.0" mnemonicParsing="false" onAction="#pressContinueButton" text="Continue">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

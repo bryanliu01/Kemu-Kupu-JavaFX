@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1080.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="application.GameSceneController">
+   <children>
+      <Button fx:id="submitButton" layoutX="581.0" layoutY="341.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="141.0" style="-fx-cursor: hand;" text="Submit">
+         <font>
+            <Font size="28.0" />
+         </font></Button>
+      <Label fx:id="titleLabel" alignment="CENTER" contentDisplay="CENTER" layoutY="27.0" prefHeight="38.0" prefWidth="1080.0" text="Label">
+         <font>
+            <Font name="System Italic" size="52.0" />
+         </font>
+      </Label>
+      <TextField fx:id="answerField" layoutX="365.0" layoutY="181.0">
+         <font>
+            <Font size="28.0" />
+         </font></TextField>
+      <Button fx:id="skipButton" layoutX="376.0" layoutY="341.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="110.0" style="-fx-cursor: hand;" text="Skip">
+         <font>
+            <Font size="28.0" />
+         </font></Button>
+      <Slider fx:id="festivalSpeed" blockIncrement="0.1" layoutX="329.0" layoutY="456.0" majorTickUnit="0.25" max="1.5" min="0.5" minorTickCount="5" prefHeight="58.0" prefWidth="413.0" showTickMarks="true" snapToTicks="true" style="-fx-cursor: hand;" value="1.0" />
+      <Label fx:id="festivalSpeedLabel" layoutX="431.0" layoutY="427.0" prefHeight="29.0" prefWidth="208.0" text="Text Speed: 1x">
+         <font>
+            <Font size="25.0" />
+         </font></Label>
+      <Button fx:id="repeatButton" layoutX="312.0" layoutY="538.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="208.0" style="-fx-cursor: hand;" text="Repeat Word">
+         <font>
+            <Font size="28.0" />
+         </font></Button>
+      <Label fx:id="scoreText" alignment="CENTER" contentDisplay="CENTER" layoutX="386.0" layoutY="295.0" prefHeight="32.0" prefWidth="308.0" text="Score: 0" textAlignment="CENTER">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="blankWord" alignment="CENTER" contentDisplay="CENTER" layoutX="367.0" layoutY="113.0" prefHeight="32.0" prefWidth="344.0" text="Blanks" textAlignment="CENTER">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="continueButton" layoutX="420.0" layoutY="450.0" mnemonicParsing="false" onAction="#switchToSummaryScene" prefHeight="50.0" prefWidth="238.0" text="Continue" visible="false">
+         <font>
+            <Font size="28.0" />
+         </font></Button>
+      <Button fx:id="macronButton" layoutX="601.0" layoutY="538.0" mnemonicParsing="false" onAction="#macronButton" prefHeight="50.0" prefWidth="141.0" style="-fx-cursor: hand;" text="Macron">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Button>
+      <Label fx:id="gameTimerLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="462.0" layoutY="242.0" prefHeight="46.0" prefWidth="157.0" text="Timer" textAlignment="CENTER">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="titleLabel1" alignment="CENTER" contentDisplay="CENTER" layoutY="668.0" prefHeight="38.0" prefWidth="1080.0" text="Current Mode: Main Game">
+         <font>
+            <Font name="System Italic" size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,59 @@
+.table-view {
+    -fx-background-color: transparent;
+
+}
+
+/*style for the column headers*/
+.table-view .column-header{
+    -fx-background-color: grey;
+    -fx-background-inserts: 0 11 10 0;
+    -fx-padding: 0 0 10 0;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: transparent;
+
+}
+
+.table-view .column-header .label{
+    -fx-text-fill: white;
+    -fx-text-size: 15;
+}
+
+
+/* style for the table cells */
+.table-view .table-cell{
+    -fx-border-color: transparent;
+    -fx-padding: 2 0 2 10px;
+}
+
+.table-row-cell: odd{
+    -fx-background-color: #93f9b911;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+.table-row-cell: even{
+    -fx-background-color: #1dbbdd11;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+.table-row-cell:selected{
+    -fx-text-background-color: red;
+
+}
+
+.table-row-cell: hover {
+    -fx-background-color: #93f9b911;
+    -fx-text-background-color: red;
+}
+#tableView.table-view .scroll-bar * {
+
+    -fx-min-width: 0;
+    -fx-pref-width: 0;
+    -fx-max-width: 0;
+
+    -fx-min-height: 0;
+    -fx-pref-height: 0;
+    -fx-max-height: 0;
+}
